@@ -37,7 +37,7 @@ from isaaclab.utils import configclass
 # Create custom cfg file for articulated quadruped spawning
 QUADRUPED_CFG = ArticulationCfg(
     spawn=sim_utils.UsdFileCfg(
-        usd_path=os.environ['HOME'] + "/quadruped_balance_rl/quadruped_robot.usd",
+        usd_path=os.environ['HOME'] + "/quadruped-balance-rl/quadruped_robot.usd",
         rigid_props=sim_utils.RigidBodyPropertiesCfg(
             rigid_body_enabled=True,
             max_linear_velocity=1000.0,
