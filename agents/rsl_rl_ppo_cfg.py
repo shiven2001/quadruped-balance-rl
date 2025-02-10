@@ -4,16 +4,15 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 from isaaclab_rl.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlPpoActorCriticCfg, RslRlPpoAlgorithmCfg
-
 from isaaclab.utils import configclass
 
 
 @configclass
-class AntPPORunnerCfg(RslRlOnPolicyRunnerCfg):
+class WheeledQuadrupedPPORunnerCfg(RslRlOnPolicyRunnerCfg):
     num_steps_per_env = 32
     max_iterations = 1000
     save_interval = 50
-    experiment_name = "ant"
+    experiment_name = "quadruped_balance"
     empirical_normalization = False
     policy = RslRlPpoActorCriticCfg(
         init_noise_std=1.0,
